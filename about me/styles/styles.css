@@ -1,0 +1,23 @@
+/* import a front and let to use the font-family property  */
+@import url(https://fonts.google.com/);
+
+body {
+  /* Back ups if the first font is not available */
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  background-color: aliceblue;
+}
+
+h1 {
+  font-family: "Courier New", Courier, monospace;
+  color: navy;
+}
+img {
+  width: "500";
+  height: "500";
+}
+h3 {
+  font-family: "Courier New", Courier, monospace;
+}
+p {
+  color: black;
+}
