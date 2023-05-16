@@ -1,4 +1,6 @@
+@import url("https://www.cssfontstack.com/");
 #content {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   max-width: 1600px;
   margin: 0 auto;
 }
@@ -13,8 +15,12 @@
   text-align: center;
 }
 
-#hero-img{
-    width: 100%;
+#hero-img {
+  width: 100%;
+}
+
+#logo_link {
+  padding-top: 5px;
 }
 
 .button-box {
@@ -22,21 +28,33 @@
 }
 
 .icon {
-    width: 80px;
+  width: 80px;
 }
 
 main section {
   text-align: center;
 }
 
+main section img {
+  box-sizing: border-box;
+}
+
 nav a {
   text-align: center;
   color: #d9c2a3;
   text-decoration: none;
+  padding: 35px;
 }
 
 body {
   background-color: #fcfbfb;
+  font-size: 22px;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin: 0;
 }
 header {
   background-color: #3a5a40;
@@ -51,35 +69,62 @@ nav a:hover {
   background-color: #a3b18a;
   color: black;
   text-decoration: none;
+  padding: 15px 30px;
+  margin-top: 50px;
+  border-radius: 5px;
 }
 
 .book:hover,
 .join:hover {
+  font-size: 18px;
   background-color: #a3b18a;
   color: black;
 }
 
 .msg {
+  line-height: 1.5em;
   background-color: #a3b18a;
   color: black;
+  padding: 35px;
 }
 
 .msg h2 {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
+}
+
+.rivers-card,
+.camping-card,
+.rapids-card {
+  margin: 200px 0;
 }
 
 .msg p {
+  font-size: 0.8em;
   color: black;
+  padding-bottom: 15px;
 }
 
+.icon {
+  padding-top: 10px;
+}
+.card-img {
+  border: 10px solid black;
+}
 footer {
   background-color: #3a5a40;
   color: black;
+  padding: 25px 50px;
+  margin-top: 200px;
 }
 
 footer p {
-    font-size: 1.2em;
-}   
+  font-size: 1.2em;
+}
+
+footer .social img {
+  padding-top: 15px;
+}
 
 footer a {
   color: black;
@@ -91,12 +136,15 @@ footer a:hover {
 }
 
 footer p a:hover {
-    text-decoration: underline;
-    text-decoration: underline;
-} 
+  text-decoration: underline;
+  text-decoration: underline;
+}
 
 .home-title {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 2em;
   color: black;
+  margin-top: 10px;
 }
 
 h4 {
