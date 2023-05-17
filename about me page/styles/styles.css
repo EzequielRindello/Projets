@@ -1,23 +1,39 @@
 /* import a front and let to use the font-family property  */
 @import url(https://fonts.google.com/);
 
+#mephoto{
+  border: 3px solid navy;
+  width: 500px;
+  height: 500px;
+  border-radius: 300px;
+}
+
+#main-title {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 60px;
+  color: navy;
+}
+
+a{
+  padding: 25px;
+}
+
 body {
   /* Back ups if the first font is not available */
   font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
   background-color: aliceblue;
+  text-align: center;
 }
-
-h1 {
-  font-family: "Courier New", Courier, monospace;
-  color: navy;
-}
-img {
-  width: "500";
-  height: "500";
+img{
+  height: 40px;
 }
 h3 {
   font-family: "Courier New", Courier, monospace;
+  color: navy;
+  font-size: 35px;
 }
 p {
   color: black;
+  font-size: 20px;
+  padding: 25px;
 }

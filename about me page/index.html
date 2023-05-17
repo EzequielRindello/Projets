@@ -13,17 +13,17 @@
   <body>
     <!-- represents introductory content, typically a group of introductory or navigational help. -->
     <header>
-      <h1>Hello everyone!</h1>
-      <p>Welcome to my first html work.</p>
+      <h1 id="main-title">Hello everyone!</h1>
+      <p>Welcome to my first html work :D</p>
     </header>
 
     <!-- represents the dominant content of the <body> of a document. -->
     <main>
       <h1>About me</h1>
-      <img src="img/das.jpg" width="500" height="500" alt="me photo" />
+      <img id="mephoto" src="images/das.jpg" alt="me photo" />
       <h3>Ezequiel Rindello</h3>
       <p>
-        My name is Ezequiel, some friends call me nani. I am 23 years old and
+        My name is Ezequiel, some friends call me Nani. I am 23 years old and
         currently working as a handyman at John Deere while studying and
         learning programming at BYU. <br />
         I consider myself an introverted person, I like to ride a bike, fish,
@@ -32,16 +32,22 @@
         I have been a member of the church since I was 13 years old!
       </p>
       <!-- contains all elements used to hold the menu links for your web page -->
-      <p>Here are some social media</p>
-      <nav>
-        <a href="https://www.instagram.com/nanirindello/">Instagram</a>
-      </nav>
-      <nav>
-        <a href="https://www.facebook.com/ezenani.rindello">Facebook</a>
-      </nav>
     </main>
 
     <!--  represents a footer for its nearest ancestor sectioning content or sectioning root element -->
-    <footer><p>Ezequiel rindello 2023 &copy</p></footer>
+    <footer>
+      <div class="social-media">
+        <a href="https://www.facebook.com/ezenani.rindello/" target="_blank">
+          <img src="images/facebook.png" alt="fb icon" />
+        </a>
+        <a href="https://twitter.com/" target="_blank">
+          <img src="images/twitter.png" alt="twitter icon" />
+        </a>
+        <a href="https://www.instagram.com/nanirindello/" target="_blank">
+          <img src="images/instagram.png" alt="instagram icon" />
+        </a>
+      </div>
+      <p>&copy 2023</p>
+    </footer>
   </body>
 </html>
