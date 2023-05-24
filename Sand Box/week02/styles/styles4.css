@@ -1,1 +1,25 @@
+.cherry-lay{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
+.izquierda{
+
+
+}
+.derecha{
+    background-color: darkgray;
+}
+
+h1{
+    font-size: 250px;
+    text-align :center;
+    vertical-align: text-bottom;  
+}
+
+h2{
+    font-size: 80px;
+    color: rgb(233, 5, 5);
+    text-align: center;
+    vertical-align: text-bottom;  
+}
