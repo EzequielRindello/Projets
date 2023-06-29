@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Personal Website</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
@@ -19,18 +22,62 @@
       </div>
     </header>
     <main>
-      <h1 class="main_h1">Hello! I'm Ezequiel Rindello</h1>
-      <p class="purpuse-a">
-        A future web developer with passion and enthusiasm to learn new
-        technologies <br />
-        This is one of the projects I've been working on
-      </p>
-      <a class="projects-button" href="projects.html">check more</a>
+      <div class="container">
+        <a href="#" class="toggleBox">
+          <span class="icon"></span>
+        </a>
+        <ul class="navItems">
+          <li>
+            <a href="#">
+              <i class="fa fa-home" style="--i: 1"></i>
+              <span style="--g: 1">Home</span>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://www.linkedin.com/in/ezequiel-rindello"
+              target="_blank"
+            >
+              <i class="fa fa-linkedin" style="--i: 2"></i>
+              <span style="--g: 2">Linkedin</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/EzequielRindello" target="_blank">
+              <i class="fa fa-github" style="--i: 3"></i>
+              <span style="--g: 3">GitHub</span>
+            </a>
+          </li>
+          <li>
+            <a href="#" target="_blank">
+              <i class="fa fa-envelope" style="--i: 4"></i>
+              <span style="--g: 4">Gmail</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h1 class="main_h1">Hello! I'm Ezequiel Rindello</h1>
+        <p class="purpuse-a">
+          A future web developer with passion and enthusiasm to learn new
+          technologies <br />
+          This is one of the projects I've been working on
+        </p>
+        <a class="projects-button" href="projects.html">check more</a>
+      </div>
     </main>
     <footer>
       &copy; Copyright
       <script>
-        document.write(new Date().getFullYear()); // Use JavaScript to get the current date
+        // Use JavaScript to write the current date
+        document.write(new Date().getFullYear());
+        //togle scrip and varibles
+        var toggleClick = document.querySelector(".toggleBox");
+        var container = document.querySelector(".container");
+        toggleClick.addEventListener("click", () => {
+          toggleClick.classList.toggle("active");
+          container.classList.toggle("active");
+        });
       </script>
       | Made by
       <a target="_blank" href="site-plan.html">Ezequiel Rindello</a>
