@@ -1,0 +1,19 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+body {
+  display: flex;
+  width: 100%;
+  min-height: 100vh;
+  background-color: linear-gradient(45deg, #242f36, #161d2c, #26d07c);
+}
+.container{
+    top: 150px;
+    height:70px ;
+    width: 70px;
+    background-color: #fff;
+    
+}
