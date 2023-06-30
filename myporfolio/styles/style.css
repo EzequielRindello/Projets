@@ -193,6 +193,13 @@ li a span{
   width: 100%;
   line-height: 1.6;
 }
+.general{
+  position: absolute;
+  width: 70%;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 /* button css */
 .projects-button{
   margin: 30px;
