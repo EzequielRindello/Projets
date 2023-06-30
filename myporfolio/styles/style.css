@@ -50,7 +50,7 @@ header {
 }
 .menu a:hover{
   color: #07bc0c;
-  transition-delay: 0.1s;
+  transition: 0.2s ease;
 }
 /* container css */
 /* https://www.youtube.com/watch?v=1uEAt51fEos tutorial use */
@@ -215,6 +215,13 @@ li a span {
   font-weight: 700;
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(#162235);
+}
+.projects-button:hover{
+  transform: translateY(-5px);
+  transition: 0.2s ease;
+  transition-delay: 0.1s;
+  /* color: #26d07c; */
+  color: #07bc0c;
 }
 /*footer css*/
 footer {
