@@ -1,12 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Form example</title>
-    <link rel="stylesheet" href="styles/form.css">
-</head>
-<body>
-    
-</body>
+    <link rel="stylesheet" href="styles/form.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+      rel="stylesheet"
+    />
+    <!-- FONT AWESOME -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <!-- ANIMATE CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
+    />
+  </head>
+  <body>
+    <div class="content">
+      <h1 class="logo">Contact <span>Me</span></h1>
+
+      <div class="contact-wrapper animated bounceInUp">
+        <div class="contact-form">
+          <h3>Contact me</h3>
+          <form action="">
+            <p>
+              <label>Enter your name</label>
+              <input
+                type="text"
+                name="fullname"
+                placeholder="Jhon Doe"
+                required
+              />
+            </p>
+            <p>
+              <label>Email Adress</label>
+              <input
+                type="email"
+                name="email"
+                placeholder="example@gmail.com"
+                required
+              />
+            </p>
+            <p>
+              <label>Phone Number</label>
+              <input type="tel" name="phone" placeholder="+1 (111) 111-11-11" />
+            </p>
+            <p>
+              <label>Affair</label>
+              <input
+                type="text"
+                name="affair"
+                placeholder="Job opportunity"
+                required
+              />
+            </p>
+            <p class="block">
+              <label>Message</label>
+              <textarea
+                name="message"
+                rows="3"
+                placeholder="Text here..."
+              ></textarea>
+            </p>
+            <p class="block">
+              <button>Send</button>
+            </p>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h4>My personal info</h4>
+          <ul>
+            <li>
+              <i class="fas fa-map-marker-alt"></i> Rosario, Santa Fe,
+              Argentina.
+            </li>
+            <li><i class="fas fa-phone"></i> (+54 9) 341 279-3916</li>
+            <li>
+              <i class="fas fa-envelope-open-text"></i>
+              rindelloezequiel@gmail.com
+            </li>
+          </ul>
+          <br />
+          <br />
+          <p>
+            Feel free to contact me! <br />
+            I will reach you as soon as I can.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
