@@ -4,14 +4,13 @@
 
 body {
   background: #181818;
-  color: #fff;
+  color: #ACB8C4;
   line-height: 1.6;
   font-family: "Quicksand", sans-serif;
-  padding: 0 1.5em;
 }
 
 .container {
-  max-width: 1170px;
+  padding: 0 1.5em;
   margin-left: auto;
   margin-right: auto;
   padding: 1.5em;
@@ -22,13 +21,13 @@ ul {
   padding: 0;
 }
 
-.logo {
+.name-logo{
   text-align: left;
   font-size: 3em;
 }
 
-.logo span {
-  color: #b70e21;
+.name-logo span {
+  color: #07BC0C;
 }
 
 .contact-wrapper {
@@ -40,7 +39,7 @@ ul {
 }
 
 .contact-form {
-  background: #222222;
+  background: #162235;
 }
 
 .contact-form form {
@@ -70,11 +69,11 @@ ul {
   background: none;
   outline: 0;
   color: #fff;
-  border-bottom: 1px solid #d63031;
+  border-bottom: 1px solid #07BC0C;
 }
 
 .contact-form form button {
-  background: #b70e21;
+  background: #07BC0C;
   border: 0;
   text-transform: uppercase;
   padding: 1em;
@@ -82,7 +81,7 @@ ul {
 
 .contact-form form button:hover,
 .contact-form form button:focus {
-  background: #d63031;
+  background: #07BC0C;
   color: #fff;
   transition: background-color 1s ease-out;
   outline: 0;
