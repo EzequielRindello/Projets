@@ -249,6 +249,7 @@ ul {
 }
 .contact-wrapper {
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+  margin: 4%;
 }
 .contact-wrapper > * {
   padding: 1em;
