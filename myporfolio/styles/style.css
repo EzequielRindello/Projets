@@ -12,7 +12,6 @@ body {
   display: grid;
   grid-template-rows: auto 1fr auto; /* Encabezado, Contenido, Footer */
   min-height: 100vh; /* Para que el contenido ocupe al menos el 100% de la altura de la ventana */
-  margin: 0; /* Elimina los márgenes por defecto del cuerpo */
 }
 /* header css */
 header {
@@ -48,7 +47,7 @@ header {
   color: #acb8c4;
   font-weight: bold;
 }
-.menu a:hover{
+.menu a:hover {
   color: #07bc0c;
   transition: 0.2s ease;
 }
@@ -204,7 +203,7 @@ li a span {
 /* button css */
 .projects-button {
   margin: 40px;
-  padding: 1.5rem 3.0rem;
+  padding: 1.5rem 3rem;
   font-size: 0.7rem;
   text-decoration: none;
   background: #162235;
@@ -216,10 +215,9 @@ li a span {
   border-radius: 5px;
   box-shadow: 0 5px 15px 0 rgba(#162235);
 }
-.projects-button:hover{
+.projects-button:hover {
   transform: translateY(-3px);
   transition: 0.2s ease;
-  transition-delay: 0.1s;
   /* color: #26d07c; */
   color: #07bc0c;
 }
@@ -234,21 +232,41 @@ footer a {
   text-decoration: underline;
   color: #acb8c4;
 }
+/* -------------------------------------- PAGE 2 ------------------------------------------------------------------- */
+.h2_pages{
+  font-size: 2.5rem;
+}
+.h3_pages{
+
+}
+.underline {
+  margin: auto;
+  width: 4%;
+  height: 5px;
+  border-radius: 5px;
+  background: #07bc0c;
+}
+img{
+  width: 700px;
+  height: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.05);
+}
 /* --------------------------------------------------------------------------------------------------------- */
 ul {
   list-style: none;
   padding: 0;
 }
-.name-logo{
+.name-logo {
   text-align: left;
   font-size: 3em;
   margin: 2%;
 }
 .name-logo span {
-  color: #07BC0C;
+  color: #07bc0c;
 }
 .contact-wrapper {
-  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.1);
   margin: 4%;
 }
 .contact-wrapper > * {
@@ -281,20 +299,20 @@ ul {
   background: none;
   outline: 0;
   color: #fff;
-  border-bottom: 1px solid #07BC0C;
+  border-bottom: 1px solid #07bc0c;
 }
 .contact-form form button {
-  background: #07BC0C;
+  background: #07bc0c;
   border: 0;
   text-transform: uppercase;
   padding: 1em;
 }
 .contact-form form button:hover,
 .contact-form form button:focus {
-  background: #07BC0C;
+  background: #07bc0c;
   color: #fff;
-  transition: background-color 1s ease-out;
-  outline: 0;
+  transform: translateY(-3px);
+  transition: 0.2s ease;
 }
 .contact-info {
   background: #000;
