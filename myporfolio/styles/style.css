@@ -276,7 +276,8 @@ img {
   text-transform: uppercase;
   letter-spacing: 1px;
   display: inline-block;
-  
+  margin-left: -79%;
+  margin-top: 20%;
   font-weight: 700;
   border-radius: 5px;
   box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.05);
