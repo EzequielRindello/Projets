@@ -10,4 +10,4 @@ Web design and development principles.
 * `Positioning Activity` - define
 * `Personal Website` - define
 * `Personal Siteplan` - define
-* * `SandBox` - define
+* `SandBox` - define
