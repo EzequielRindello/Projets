@@ -246,8 +246,8 @@ footer {
   grid-row: auto;
 }
 footer a {
-  text-decoration: underline;
-  color: #acb8c4;
+  text-decoration: none;
+  color: #26d07c;
 }
 /* -------------------------------------- PAGE 2 ------------------------------------------------------------------- */
 img {
@@ -331,9 +331,56 @@ strong {
 .box2 {
   grid-column: 2;
 }
-.skills{
+.sk1,
+.sk2,
+.sk3,
+.sk4,
+.sk5,
+.sk6,
+.sk7,
+.sk8 {
+  background-color: #162235;
+  color: #acb8c4;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.05);
+}
+.skills {
   grid-column: 2;
-  outline: solid red;
+  display: grid;
+  grid-template-columns: 3% 1fr 1fr 1fr 1fr 1fr 1fr 3%;
+  grid-template-rows: 1fr 1fr ;
+}
+.sk1 {
+  grid-column: 2;
+  grid-row: 1;
+}
+.sk2 {
+  grid-column: 3;
+  grid-row: 1;
+}
+.sk3 {
+  grid-column: 4;
+  grid-row: 1;
+}
+.sk4 {
+  grid-column: 2;
+  grid-row: 2;
+}
+.sk5 {
+  grid-column: 3;
+  grid-row: 2;
+}
+.sk6 {
+  grid-column: 4;
+  grid-row: 2;
+}
+.sk7 {
+  grid-column: 5;
+  grid-row: 1;
+}
+.sk8{
+  grid-column: 6;
+  grid-row: 1;
 }
 /* -----------------------------------------------FORM---------------------------------------------------------- */
 ul {
