@@ -331,6 +331,10 @@ strong {
 .box2 {
   grid-column: 2;
 }
+.skills{
+  grid-column: 2;
+  outline: solid red;
+}
 /* -----------------------------------------------FORM---------------------------------------------------------- */
 ul {
   list-style: none;
