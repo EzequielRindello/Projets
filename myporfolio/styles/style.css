@@ -270,12 +270,10 @@ img {
 }
 .contenido {
   grid-column: 2;
-  outline: solid red;
 }
 .image {
   grid-column: 1;
   margin-top: 8%;
-  outline: solid red;
 }
 .portfolio-a {
   grid-column: 2;
