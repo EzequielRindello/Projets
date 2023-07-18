@@ -480,8 +480,10 @@ ul {
     height: 50px;
     margin-left: 20px;
   }
-  .container {
-    display: none; /* Oculta el contenedor en pantallas más pequeñas */
+}
+@media (max-width: 700px){
+  .container{
+    display: none;
   }
 }
 @media (max-width: 1600px) {
