@@ -528,6 +528,12 @@ ul {
     margin-left: -60%; /* Ajusta el margen izquierdo para pantallas más pequeñas */
     margin-top: 3%; /* Ajusta el margen superior para pantallas más pequeñas */
   }
+  .p_aboutme {
+    text-align: justify;
+    margin-left: 3%;
+    font-size: 1.0rem;
+    line-height: 1.6;
+  }
   .p_pages {
     font-size: 1rem; /* Ajusta el tamaño de fuente para pantallas más pequeñas */
     padding: 2%; /* Ajusta el espaciado interno para pantallas más pequeñas */
