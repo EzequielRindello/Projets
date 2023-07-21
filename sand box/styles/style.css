@@ -436,10 +436,10 @@ ul {
   background: none;
   outline: 0;
   color: #fff;
-  border-bottom: 1px solid #bd0057;
+  border-bottom: 1px solid #a9adad;
 }
 .contact-form form button {
-  background: #bd0057;
+  background: #007da5;
   border: 0;
   text-transform: uppercase;
   padding: 1em;
@@ -452,7 +452,8 @@ ul {
   transition: 0.2s ease;
 }
 .contact-info {
-  background: #000;
+  background: #212225;
+  color: #fff;
 }
 .contact-info h4,
 .contact-info ul,
