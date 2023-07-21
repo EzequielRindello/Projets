@@ -1,25 +1,89 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>BYUI</title>
-    <link rel="stylesheet" href="styles/styles2.css">
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Website</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <a id="active" href="byui.html">Home</a>
-            <a href="https://www.churchofjesuschrist.org">Church of Jesus Christ</a>
-            <a href="https://www.churchofjesuschrist.org/temples">Temples</a>
-            <a href="https://www.churchofjesuschrist.org/study/scriptures">Scriptures</a>
-        </nav>
+      <div class="logo"></div>
+      <div class="name">Ezequiel Rindello</div>
+      <div class="menu">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="aboutme.html">About Me</a>
+      </div>
     </header>
     <main>
-        <h1>Brigham Young University Idaho</h1>
-        <img src="https://www.byui.edu/images/service-sites/map-banner.jpg">
-        <p>BYU-Idaho is a comfortable place to learn and grow as a disciple of Jesus Christ because students, faculty, and employees share a commitment to live the gospel.</p>
+      <div>
+        <div class="container">
+          <a href="#" class="toggleBox">
+            <span class="icon"></span>
+          </a>
+          <ul class="navItems">
+            <li>
+              <a href="index.html">
+                <i class="fa fa-home" style="--i: 1"></i>
+                <span style="--g: 1">Home</span>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/ezequiel-rindello"
+                target="_blank"
+              >
+                <i class="fa fa-linkedin" style="--i: 2"></i>
+                <span style="--g: 2">Linkedin</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/EzequielRindello" target="_blank">
+                <i class="fa fa-github" style="--i: 3"></i>
+                <span style="--g: 3">GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a href="aboutme.html#seccion-destino">
+                <i class="fa fa-envelope" style="--i: 4"></i>
+                <span style="--g: 4">Gmail</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="general">
+          <h1 class="main_h1">Hello! I'm Ezequiel Rindello</h1>
+          <br />
+          <p class="purpuse-a">
+            A future web developer with passion and enthusiasm to learn new
+            technologies <br />
+            This is one of the projects I've been working on
+          </p>
+          <a class="projects-button" href="projects.html">check more</a>
+        </div>
+      </div>
     </main>
     <footer>
-        <p>My Web Page 20XX &copy</p>
+      &copy; Copyright
+      <script>
+        // Use JavaScript to write the current date
+        document.write(new Date().getFullYear());
+        //togle scrip and varibles
+        var toggleClick = document.querySelector(".toggleBox");
+        var container = document.querySelector(".container");
+        toggleClick.addEventListener("click", () => {
+          toggleClick.classList.toggle("active");
+          container.classList.toggle("active");
+        });
+      </script>
+      | Made by
+      <a target="_blank" href="site-plan.html">Ezequiel Rindello</a>
     </footer>
-</body>
+  </body>
 </html>
