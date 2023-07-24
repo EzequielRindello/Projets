@@ -476,6 +476,9 @@ ul {
     grid-row: 2;
     margin: 4%;
   }
+  header {
+    padding: 0.5em;
+  }
 }
 @media (max-width: 1600px) {
   /* igual o inferior al valor especificado */
