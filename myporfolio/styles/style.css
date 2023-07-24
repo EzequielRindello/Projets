@@ -461,6 +461,21 @@ ul {
   .main_h1 {
     font-size: 1.5rem;
   }
+  .aboutme_container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+  .box1 {
+    grid-column: 1;
+    grid-row: 1;
+    margin: 4%;
+  }
+  .box2 {
+    grid-column: 1;
+    grid-row: 2;
+    margin: 4%;
+  }
 }
 @media (max-width: 1600px) {
   /* igual o inferior al valor especificado */
