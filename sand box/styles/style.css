@@ -1,7 +1,28 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; 
+}
+:root {
+  --background-color: #ffffff;
+  --text-color: #000000;
+  --primary-color: #3a5a40   ;
+  --secondary-color: #588157 ;
+  --accent1-color: #a3b18a;
+  --accent2-color: white;
+
+  --heading-font: "Oswald";
+  --paragraph-font: Roboto, Helvetica, sans-serif;
+
+  --headline-color-on-white: #3a5a40;  
+  --headline-color-on-color: white; 
+  --paragraph-color-on-white: #3a5a40; 
+  --paragraph-color-on-color: white; 
+  --paragraph-background-color: #3a5a40  ;
+  --nav-link-color: #3a5a40;
+  --nav-background-color: #a3b18a;
+  --nav-hover-link-color: white;
+  --nav-hover-background-color: #3a5a40;
 }
 body {
   font-family: "Ensign:Sans", Arial, "noto sans", sans-serif;
