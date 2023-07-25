@@ -477,7 +477,10 @@ ul {
     margin: 4%;
   }
   header {
-    padding: 0.5em;
+    padding: 0.8em;
+  }
+  .menu a{
+    font-size: 0.8em;
   }
 }
 @media (max-width: 1600px) {
