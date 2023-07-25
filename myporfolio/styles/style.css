@@ -482,6 +482,10 @@ ul {
   .menu a{
     font-size: 0.8em;
   }
+  .projects_container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
 }
 @media (max-width: 1600px) {
   /* igual o inferior al valor especificado */
