@@ -4,26 +4,48 @@
   box-sizing: border-box;
 }
 :root {
+  /* body colors */
   --background-color: #0d1117;
   --text-color: #acb8c4;
+  --heading-color: #acb8c4;
   --primary-color: #162235;
   --secondary-color: #07bc0c;
   --footer-link: #26d07c;
   --hover-color: #07bc0c;
-  --buttons-color: #162235;
 
+  /* buttons colors */
+  --buttons-color: #162235;
+  --buttons-text-color: #acb8c4;
+  --buttons-hover: #07bc0c;
+
+  /* toggle colors */
+  --toggle-background: #162235;
+  --toggle-hover: #07bc0c;
+  --toggle-color: #acb8c4;
+  --toggle-span: #acb8c4;
+
+  /* fonts */
   --heading-font: "Inter Display", sans-serif;
   --paragraph-font: "Ensign:Sans", Arial, "noto sans", sans-serif;
   --logo-font: "HTF Deseret";
 }
-:root.light-mode {
+body.color-change {
   --background-color: #fff;
   --text-color: #212225;
+  --heading-color: #0d0f10;
   --primary-color: #eff0f0;
   --secondary-color: #bd0057;
   --footer-link: #bd0057;
   --hover-color: #177c9c;
+
   --buttons-color: #007da5;
+  --buttons-text-color: #fff;
+  --buttons-hover: #fff;
+
+  --toggle-background: #007da5;
+  --toggle-hover: #bd0057;
+  --toggle-color: #fff;
+  --toggle-span: #212225;
 
   --heading-font: "Inter Display", sans-serif;
   --paragraph-font: "Ensign:Sans", Arial, "noto sans", sans-serif;
@@ -63,7 +85,7 @@ header {
   font-size: 1rem;
   text-align: left;
   margin-left: 2%;
-  color: var(--text-color);
+  color: var(--heading-color);
 }
 .menu {
   text-align: right;
@@ -85,7 +107,7 @@ header {
   left: 1rem;
   height: 4.375rem;
   width: 4.375rem;
-  background-color: #162235;
+  background-color: var(--toggle-background);
   border-radius: 50px;
   position: relative;
   transition: 0.4s ease;
@@ -107,7 +129,7 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #acb8c4;
+  background-color: var(--toggle-color);
 }
 .toggleBox.active .icon {
   width: 0;
@@ -120,7 +142,7 @@ header {
   width: 35px;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #acb8c4;
+  background-color: var(--toggle-color);
   transition: 0.3s;
 }
 .icon::before {
@@ -151,12 +173,12 @@ li {
 }
 li a {
   text-transform: uppercase;
-  color: #acb8c4;
+  color: var(--toggle-color);
 }
 li a i {
   position: relative;
   display: block;
-  color: #acb8c4;
+  color: var(--toggle-color);
   padding: 25px 0;
   width: 100%;
   text-align: center;
@@ -170,7 +192,7 @@ li a i::after {
   width: 0px;
   height: 50%;
   transform: translateY(-50%);
-  color: var(--secondary-color);
+  color: var(--toggle-hover);
   border-radius: 8px 0 0 8px;
 }
 li:hover a i::after {
@@ -184,11 +206,11 @@ li:hover a i::after {
 }
 .container.active .navItems li:hover a i {
   transition: 0.2s ease;
-  color: var(--secondary-color);
+  color: var(--toggle-hover);
 }
 li a span {
   position: absolute;
-  color: #acb8c4;
+  color: var(--toggle-span);
   margin: 22px 0;
   font-weight: 500;
   letter-spacing: 2px;
@@ -209,7 +231,7 @@ li a span {
   text-transform: uppercase;
   letter-spacing: 2px;
   text-align: center;
-  color: #acb8c4;
+  color: var(--heading-color);
   font-weight: 800;
 }
 .purpuse-a {
@@ -231,19 +253,19 @@ li a span {
   padding: 1.5rem 3rem;
   font-size: 0.7rem;
   text-decoration: none;
-  background: #162235;
-  color: #acb8c4;
+  background: var(--buttons-color);
+  color: var(--buttons-text-color);
   text-transform: uppercase;
   letter-spacing: 1px;
   display: inline-block;
   font-weight: 700;
   border-radius: 5px;
-  box-shadow: 0 5px 15px 0 rgba(#162235);
+  box-shadow: 0 5px 15px 0 rgba(var(--buttons-color));
 }
 .projects-button:hover {
   transform: translateY(-3px);
   transition: 0.2s ease;
-  color: var(--secondary-color);
+  color: var(--buttons-hover);
 }
 /* ----------------------------------------------GENERAL STYLES------------------------------------------------------------------ */
 .h2_pages {
@@ -265,7 +287,7 @@ li a span {
 }
 /* -------------------------------------------FOOTER--------------------------------------------------------------------- */
 footer {
-  background-color: #162235;
+  background-color: var(--primary-color);
   padding: 10px;
   grid-column: 1 / -1;
   grid-row: auto;

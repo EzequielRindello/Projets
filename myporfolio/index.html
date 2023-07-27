@@ -68,6 +68,7 @@
           <a class="projects-button" href="projects.html">check more</a>
         </div>
       </div>
+      <button id="color-button">Cambiar a modo oscuro</button>
     </main>
     <footer>
       &copy; Copyright
@@ -80,6 +81,32 @@
         toggleClick.addEventListener("click", () => {
           toggleClick.classList.toggle("active");
           container.classList.toggle("active");
+        });
+
+        // Obtén el botón y añade un escuchador de eventos para cambiar los colores
+        const colorButton = document.getElementById("color-button");
+
+        colorButton.addEventListener("click", function () {
+          document.body.classList.toggle("color-change");
+          const isColorChanged =
+            document.body.classList.contains("color-change");
+          localStorage.setItem("colorChanged", isColorChanged);
+        });
+
+        // Aplicar las preferencias guardadas al cargar la página
+        document.addEventListener("DOMContentLoaded", function () {
+          const isColorChanged =
+            localStorage.getItem("colorChanged") === "true";
+          if (isColorChanged) {
+            document.body.classList.add("color-change");
+          }
+        });
+
+        // Guardar las preferencias antes de que la página se cierre
+        window.addEventListener("beforeunload", function () {
+          const isColorChanged =
+            document.body.classList.contains("color-change");
+          localStorage.setItem("colorChanged", isColorChanged);
         });
       </script>
       | Made by

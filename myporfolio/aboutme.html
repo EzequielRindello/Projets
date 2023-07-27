@@ -50,7 +50,8 @@
               href="https://www.linkedin.com/in/ezequiel-rindello/"
               target="_blank"
               >Linkedin!</a
-            > I'm open to Job opportunities where I can contribute, learn and
+            >
+            I'm open to Job opportunities where I can contribute, learn and
             grow. If you have a good opportunity for an entry level job that
             matches my skills then don't hesitate to contact me.
           </p>
@@ -168,7 +169,24 @@
     <footer>
       &copy; Copyright
       <script>
-        document.write(new Date().getFullYear()); // Use JavaScript to get the current date
+        // Use JavaScript to get the current date
+        document.write(new Date().getFullYear());
+
+        // guarda las preferencias del usuario
+        document.addEventListener("DOMContentLoaded", function () {
+          const isColorChanged =
+            localStorage.getItem("colorChanged") === "true";
+          if (isColorChanged) {
+            document.body.classList.add("color-change");
+          }
+        });
+
+        // Guardar las preferencias antes de que la página se cierre
+        window.addEventListener("beforeunload", function () {
+          const isColorChanged =
+            document.body.classList.contains("color-change");
+          localStorage.setItem("colorChanged", isColorChanged);
+        });
       </script>
       | Made by
       <a target="_blank" href="site-plan.html">Ezequiel Rindello</a>
