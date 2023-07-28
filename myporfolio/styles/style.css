@@ -24,6 +24,14 @@
   --toggle-color: #acb8c4;
   --toggle-span: #acb8c4;
 
+  /* form colors */
+  --form-background: #162235;
+  --form-text-color: #acb8c4;
+  --form-general-color: #fff;
+  --form-background-button: #07bc0c;
+  --form-lines: #07bc0c;
+  --form-message: #fff;
+
   /* fonts */
   --heading-font: "Inter Display", sans-serif;
   --paragraph-font: "Ensign:Sans", Arial, "noto sans", sans-serif;
@@ -47,6 +55,13 @@ body.color-change {
   --toggle-color: #fff;
   --toggle-span: #212225;
 
+  --form-background: #eff0f0;
+  --form-text-color: #212225;
+  --form-general-color: #fff;
+  --form-background-button: #007da5;
+  --form-lines: #bd0057;
+  --form-message: #212225;
+
   --heading-font: "Inter Display", sans-serif;
   --paragraph-font: "Ensign:Sans", Arial, "noto sans", sans-serif;
   --logo-font: "HTF Deseret";
@@ -61,7 +76,7 @@ body {
   grid-template-rows: auto 1fr auto;
   min-height: 100vh;
 }
-/* ----------------------------------------------HEADER-------------------------------------------------------- */
+/* ----------------------------------------------header-------------------------------------------------------- */
 header {
   background-color: var(--primary-color);
   padding: 1em;
@@ -101,7 +116,7 @@ header {
   color: var(--secondary-color);
   transition: 0.2s ease;
 }
-/* -----------------------------------------------TOGGLE----------------------------------------------------- */
+/* -----------------------------------------------toggle----------------------------------------------------- */
 .container {
   top: 9rem;
   left: 1rem;
@@ -225,7 +240,7 @@ li a span {
   transition: 0.2s ease;
   color: var(--secondary-color);
 }
-/* -----------------------------------------------MAIN H1---------------------------------------------------------- */
+/* -----------------------------------------------main heading---------------------------------------------------------- */
 .main_h1 {
   font-size: 3.5rem;
   text-transform: uppercase;
@@ -247,7 +262,7 @@ li a span {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* ----------------------------------------------BUTTON----------------------------------------------------------- */
+/* ----------------------------------------------button----------------------------------------------------------- */
 .projects-button {
   margin: 40px;
   padding: 1.5rem 3rem;
@@ -267,7 +282,7 @@ li a span {
   transition: 0.2s ease;
   color: var(--buttons-hover);
 }
-/* ----------------------------------------------GENERAL STYLES------------------------------------------------------------------ */
+/* ----------------------------------------------general styles------------------------------------------------------------------ */
 .h2_pages {
   font-size: 2.6rem;
   margin-top: -6%;
@@ -285,6 +300,7 @@ li a span {
   border-radius: 5px;
   background: var(--secondary-color);
 }
+/* ----------------------------------------------color button------------------------------------------------------------------ */
 #color-button {
   font-weight: bold;
   color: var(--buttons-text-color);
@@ -359,7 +375,7 @@ button .span-mother2 span:nth-child(5) {
 button .span-mother2 span:nth-child(6) {
   transition: 0.7s;
 }
-/* -------------------------------------------FOOTER--------------------------------------------------------------------- */
+/* -------------------------------------------footer--------------------------------------------------------------------- */
 footer {
   background-color: var(--primary-color);
   padding: 10px;
@@ -370,7 +386,7 @@ footer a {
   text-decoration: none;
   color: var(--footer-link);
 }
-/* -------------------------------------- PAGE 2 ------------------------------------------------------------------- */
+/* --------------------------------------page 2------------------------------------------------------------------- */
 img {
   max-width: 100%;
   height: auto;
@@ -401,8 +417,8 @@ img {
   padding: 1.3rem 1.7rem;
   font-size: 0.7rem;
   text-decoration: none;
-  background: #162235;
-  color: #acb8c4;
+  background: var(--buttons-color);
+  color: var(--buttons-text-color);
   text-transform: uppercase;
   letter-spacing: 1px;
   display: inline-block;
@@ -416,7 +432,7 @@ img {
 .portfolio-a:hover {
   transform: translateY(-3px);
   transition: 0.2s ease;
-  color: var(--secondary-color);
+  color: var(--buttons-hover);
 }
 .projects_container {
   display: grid;
@@ -424,7 +440,7 @@ img {
   margin: 2%;
   padding-bottom: 8%;
 }
-/* -----------------------------------------------PAGE 3---------------------------------------------------------- */
+/* -----------------------------------------------page 3---------------------------------------------------------- */
 .p_aboutme {
   text-align: justify;
   margin-left: 3%;
@@ -459,8 +475,8 @@ strong {
 .sk6,
 .sk7,
 .sk8 {
-  background-color: #162235;
-  color: #acb8c4;
+  background-color: var(--buttons-color);
+  color: var(--buttons-text-color);
   border-radius: 5px;
   box-shadow: 0 0 5px 0 rgba(255, 255, 255, 0.05);
   width: 100px;
@@ -475,7 +491,7 @@ strong {
   display: flex;
   flex-wrap: wrap;
 }
-/* -----------------------------------------------FORM---------------------------------------------------------- */
+/* -----------------------------------------------form---------------------------------------------------------- */
 ul {
   list-style: none;
   padding: 0;
@@ -496,7 +512,7 @@ ul {
   padding: 1em;
 }
 .contact-form {
-  background: #162235;
+  background: var(--form-background);
   text-align: left;
 }
 .contact-form form {
@@ -521,24 +537,26 @@ ul {
   border: none;
   background: none;
   outline: 0;
-  color: #fff;
-  border-bottom: 1px solid #07bc0c;
+  color: var(--form-message);
+  border-bottom: 1px solid var(--form-lines);
 }
 .contact-form form button {
-  background: #07bc0c;
+  background: var(--form-background-button);
   border: 0;
   text-transform: uppercase;
   padding: 1em;
+  color: var(--form-general-color);
 }
 .contact-form form button:hover,
 .contact-form form button:focus {
-  background: #07bc0c;
-  color: #fff;
+  background: var(--form-background-button);
+  color: var(--form-general-color);
   transform: translateY(-3px);
   transition: 0.2s ease;
 }
 .contact-info {
   background: #000;
+  color: var(--form-general-color);
 }
 .contact-info h4,
 .contact-info ul,
@@ -546,7 +564,7 @@ ul {
   text-align: center;
   margin: 0 0 1rem 0;
 }
-/* ----------------------------------------------MEDIA----------------------------------------------------------- */
+/* ----------------------------------------------media----------------------------------------------------------- */
 
 @media (min-width: 700px) {
   /* igual o superior al valor especificado */
