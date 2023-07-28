@@ -5,6 +5,40 @@
 }
 :root {
   /* body colors */
+  --background-color: #fff;
+  --text-color: #212225;
+  --heading-color: #0d0f10;
+  --primary-color: #eff0f0;
+  --secondary-color: #bd0057;
+  --footer-link: #bd0057;
+  --hover-color: #177c9c;
+
+  /* buttons colors */
+  --buttons-color: #007da5;
+  --buttons-text-color: #fff;
+  --buttons-hover: #fff;
+
+  /* toggle colors */
+  --toggle-background: #007da5;
+  --toggle-hover: #bd0057;
+  --toggle-color: #fff;
+  --toggle-span: #212225;
+
+  /* form colors */
+  --form-background: #eff0f0;
+  --form-text-color: #212225;
+  --form-general-color: #fff;
+  --form-background-button: #007da5;
+  --form-lines: #bd0057;
+  --form-message: #212225;
+
+  /* fonts */
+  --heading-font: "Inter Display", sans-serif;
+  --paragraph-font: "Ensign:Sans", Arial, "noto sans", sans-serif;
+  --logo-font: "HTF Deseret";
+}
+body.color-change {
+  /* body colors */
   --background-color: #0d1117;
   --text-color: #acb8c4;
   --heading-color: #acb8c4;
@@ -33,35 +67,6 @@
   --form-message: #fff;
 
   /* fonts */
-  --heading-font: "Inter Display", sans-serif;
-  --paragraph-font: "Ensign:Sans", Arial, "noto sans", sans-serif;
-  --logo-font: "HTF Deseret";
-}
-body.color-change {
-  --background-color: #fff;
-  --text-color: #212225;
-  --heading-color: #0d0f10;
-  --primary-color: #eff0f0;
-  --secondary-color: #bd0057;
-  --footer-link: #bd0057;
-  --hover-color: #177c9c;
-
-  --buttons-color: #007da5;
-  --buttons-text-color: #fff;
-  --buttons-hover: #fff;
-
-  --toggle-background: #007da5;
-  --toggle-hover: #bd0057;
-  --toggle-color: #fff;
-  --toggle-span: #212225;
-
-  --form-background: #eff0f0;
-  --form-text-color: #212225;
-  --form-general-color: #fff;
-  --form-background-button: #007da5;
-  --form-lines: #bd0057;
-  --form-message: #212225;
-
   --heading-font: "Inter Display", sans-serif;
   --paragraph-font: "Ensign:Sans", Arial, "noto sans", sans-serif;
   --logo-font: "HTF Deseret";
