@@ -58,6 +58,7 @@ nav a {
 }
 /* -------------------------------------------------------general styles------------------------------------------------------- */
 body {
+  box-sizing: border-box;
   background-color: #fcfbfb;
   font-family: "Raleway", Arial, sans-serif;
   font-size: 22px;
@@ -205,36 +206,118 @@ footer a:hover {
   box-shadow: 5px 5px 10px #6f7364;
 }
 /* -------------------------------------------------------rivers page------------------------------------------------------- */
+#rivers {
+  display: grid;
+  grid-template-columns: 1fr 3fr 1fr;
+}
+#rivers-box {
+  grid-column: 1/4;
+  grid-row: 1/3;
+  z-index: -1;
+}
+#rivers-msg {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: 0px;
+}
+#rivers-msg h1,
+#rivers-msg h4 {
+  text-align: center;
+  color: white;
+}
+#rivers-msg h4 {
+  letter-spacing: 5px;
+  margin-top: -30px;
+}
+
+#rivers-msg h1 {
+  letter-spacing: 5px;
+  font-size: 50px;
+}
+#rivers-img {
+  width: 100%;
+}
+/* main section of page 2*/
+.rivers-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 1em;
+  margin: 2%;
+  margin-top: 3%;
+}
+.salmon-rivers-msg-box {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  margin: 20px;
+}
 .river-title {
   text-align: center;
   background-color: #6f7364;
   padding: 20px;
   border-radius: 5px;
-  color: #ffff;
+  color: #fffcf2;
   margin: 20px;
 }
-.rivers-img {
-  border-radius: 20px;
+.salmon-river-card {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.rivers-button-box {
+  text-align: center;
+  margin-top: 10%;
+}
+#background_salmon {
+  grid-column: 2/4;
+  grid-row: 1/2;
+  background-color: #ccc5b9;
+  z-index: -1;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.river-card-img {
+  margin-top: 20px;
   border: 5px solid #403d39;
+  border-radius: 5px;
 }
-.rivers-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  grid-gap: 1em;
-  grid-row-gap: 0px;
+.river-paragraph {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 50px;
+  text-align: justify;
 }
-.box-1 {
+.desolation-canyon-msg {
   grid-column: 1/3;
-  grid-row: 1;
+  grid-row: 2/4;
+  margin: 20px;
 }
-.box-2 {
-  grid-column: 1/3;
-  grid-row: 2;
+.desolation-canyon-card {
+  grid-column: 3/4;
+  grid-row: 2/3;
 }
-.box-3 {
+#background_gray {
   grid-column: 1/3;
-  grid-row: 3;
+  grid-row: 2/3;
+  background-color: #ccc5b9;
+  z-index: -1;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.grand-canyon-msg {
+  grid-column: 2/4;
+  grid-row: 3/4;
+  margin: 20px;
+}
+.grand-canyon-card {
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+#background_grand {
+  grid-column: 2/4;
+  grid-row: 3/4;
+  background-color: #ccc5b9;
+  z-index: -1;
+  margin-top: 20px;
+  margin-left: 20px;
 }
 /* -------------------------------------------------------media------------------------------------------------------- */
 @media screen and (max-width: 900px) {
