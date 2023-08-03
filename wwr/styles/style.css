@@ -56,6 +56,9 @@ nav a {
   text-decoration: none;
   padding: 35px;
 }
+.generated-paragraph {
+  color: #d9c2a3;
+}
 /* -------------------------------------------------------general styles------------------------------------------------------- */
 body {
   box-sizing: border-box;
@@ -264,7 +267,7 @@ footer a:hover {
 }
 .rivers-button-box {
   text-align: center;
-  margin-top: 10%;
+  margin: 10%;
 }
 #background_salmon {
   grid-column: 2/4;
@@ -273,6 +276,7 @@ footer a:hover {
   z-index: -1;
   margin-top: 20px;
   margin-left: 20px;
+  border-radius: 20px;
 }
 .river-card-img {
   margin-top: 20px;
@@ -301,6 +305,7 @@ footer a:hover {
   z-index: -1;
   margin-top: 20px;
   margin-right: 20px;
+  border-radius: 20px;
 }
 .grand-canyon-msg {
   grid-column: 2/4;
@@ -318,9 +323,13 @@ footer a:hover {
   z-index: -1;
   margin-top: 20px;
   margin-left: 20px;
+  border-radius: 20px;
 }
 /* -------------------------------------------------------media------------------------------------------------------- */
 @media screen and (max-width: 900px) {
+  .river-paragraph {
+    text-align: justify;
+  }
   nav,
   #hero,
   .home-grid,
@@ -380,5 +389,13 @@ footer a:hover {
   .river2-text {
     overflow: visible;
     height: auto;
+  }
+}
+@media (max-width: 1600px) {
+  .river-paragraph {
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 0px;
+    text-align: justify;
   }
 }
