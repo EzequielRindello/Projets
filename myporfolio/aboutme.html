@@ -189,6 +189,7 @@
           localStorage.setItem("colorChanged", isColorChanged);
         });
 
+        // form notification
         document.addEventListener("DOMContentLoaded", function () {
           const form = document.querySelector(".contact-form");
           const notification = document.getElementById("notification");
@@ -199,8 +200,14 @@
             // Simulate form submission
             // You can replace this with actual AJAX request if needed
             setTimeout(function () {
-              notification.textContent = "Mensaje enviado con éxito!";
+              notification.textContent = "Message sent succesfully!";
               notification.classList.add("success");
+
+              // Hide the notification after 3 seconds
+              setTimeout(function () {
+                notification.classList.remove("success");
+                notification.textContent = "";
+              }, 5000); // Hide after 3 seconds
             }, 1000); // Show the notification after 1 second
 
             // Reset form fields (optional)
