@@ -89,26 +89,6 @@
         // Use JavaScript to write the current date
         document.write(new Date().getFullYear());
 
-        const customTranslations = {
-          Home: "Home",
-        };
-
-        function translateCustomWords() {
-          const elements = document.querySelectorAll(
-            "p, span, h1, h2, h3, h4, h5, h6, li"
-          );
-          elements.forEach((element) => {
-            const originalText = element.textContent.trim();
-            const wordsToTranslate = originalText.split(" ");
-            const translatedWords = wordsToTranslate.map(
-              (word) => customTranslations[word] || word
-            );
-            element.textContent = translatedWords.join(" ");
-          });
-        }
-
-        window.addEventListener("DOMContentLoaded", translateCustomWords);
-
         //togle scrip and varibles
         var toggleClick = document.querySelector(".toggleBox");
         var container = document.querySelector(".container");
