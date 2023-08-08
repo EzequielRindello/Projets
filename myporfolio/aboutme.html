@@ -86,6 +86,7 @@
           </div>
         </div>
       </div>
+      <div id="notification" class="notification"></div>
       <div class="content">
         <h1 class="name-logo">Contact <span>Me</span></h1>
 
@@ -186,6 +187,25 @@
           const isColorChanged =
             document.body.classList.contains("color-change");
           localStorage.setItem("colorChanged", isColorChanged);
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+          const form = document.querySelector(".contact-form");
+          const notification = document.getElementById("notification");
+
+          form.addEventListener("submit", function (event) {
+            event.preventDefault(); // Prevent the form from submitting normally
+
+            // Simulate form submission
+            // You can replace this with actual AJAX request if needed
+            setTimeout(function () {
+              notification.textContent = "Mensaje enviado con éxito!";
+              notification.classList.add("success");
+            }, 1000); // Show the notification after 1 second
+
+            // Reset form fields (optional)
+            form.reset();
+          });
         });
       </script>
       | Made by

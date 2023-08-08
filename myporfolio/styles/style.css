@@ -496,6 +496,25 @@ strong {
   display: flex;
   flex-wrap: wrap;
 }
+.notification {
+  background-color: var(--form-background-button);
+  color: var(--form-general-color);
+  padding: 10px;
+  text-align: center;
+  display: none;
+  position: fixed;
+  top: 20%;
+  left: 90%;
+  transform: translate(-50%, -50%);
+  width: 10%;
+  max-width: 300px;
+  z-index: 9999;
+  border-radius: 5px;
+}
+
+.notification.success {
+  display: block;
+}
 /* -----------------------------------------------form---------------------------------------------------------- */
 ul {
   list-style: none;
