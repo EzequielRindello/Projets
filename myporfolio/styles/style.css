@@ -636,12 +636,6 @@ ul {
     grid-row: 2;
     margin: 4%;
   }
-  header {
-    padding: 0.8em;
-  }
-  .menu a {
-    font-size: 0.8em;
-  }
   .projects_container {
     display: grid;
     grid-template-columns: 1fr;
@@ -649,6 +643,29 @@ ul {
   #color-button {
     bottom: 10%;
     right: 1%;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    position: fixed;
+    top: 0;
+    right: -250px;
+    height: 100%;
+    width: 250px;
+    transition: right 0.3s ease;
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+  }
+  .menu a {
+    margin: 10px;
+    font-size: 0.8em;
+    color: white;
+    text-decoration: none;
+  }
+  .show-sidebar .header {
+    right: 0;
   }
 }
 @media (max-width: 1600px) {

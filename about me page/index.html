@@ -1,53 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About me page</title>
-    <!-- LINK THE CSS FILE -->
     <link rel="stylesheet" href="styles/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
-
-  <!-- the body contains all the tags that will display in the page of the browser -->
   <body>
-    <!-- represents introductory content, typically a group of introductory or navigational help. -->
-    <header>
-      <h1 id="main-title">Hello everyone!</h1>
-      <p>Welcome to my first html work :D</p>
-    </header>
-
-    <!-- represents the dominant content of the <body> of a document. -->
-    <main>
-      <h1>About me</h1>
-      <img id="mephoto" src="images/das.jpg" alt="me photo" />
-      <h3>Ezequiel Rindello</h3>
-      <p>
-        My name is Ezequiel, some friends call me Nani. I am 23 years old and
-        currently working as a handyman at John Deere while studying and
-        learning programming at BYU. <br />
-        I consider myself an introverted person, I like to ride a bike, fish,
-        listen to music, watch series, movies and play video games in my spare
-        time. <br />
-        I have been a member of the church since I was 13 years old!
-      </p>
-      <!-- contains all elements used to hold the menu links for your web page -->
-    </main>
-
-    <!--  represents a footer for its nearest ancestor sectioning content or sectioning root element -->
-    <footer>
-      <div class="social-media">
-        <a href="https://www.facebook.com/ezenani.rindello/" target="_blank">
-          <img src="images/facebook.png" alt="fb icon" />
-        </a>
-        <a href="https://twitter.com/" target="_blank">
-          <img src="images/twitter.png" alt="twitter icon" />
-        </a>
-        <a href="https://www.instagram.com/nanirindello/" target="_blank">
-          <img src="images/instagram.png" alt="instagram icon" />
-        </a>
+    <main class="container">
+      <div class="card">
+        <img src="images/das.jpg" alt="John" style="width: 100%" />
+        <h1>John Doe</h1>
+        <p class="title">CEO & Founder, Example</p>
+        <p>Harvard University</p>
+        <div style="margin: 24px 0">
+          <a href="#"><i class="fa fa-dribbble"></i></a>
+          <a href="#"><i class="fa fa-twitter"></i></a>
+          <a href="#"><i class="fa fa-linkedin"></i></a>
+          <a href="#"><i class="fa fa-facebook"></i></a>
+        </div>
+        <p><button>Contact</button></p>
       </div>
-      <p>&copy 2023</p>
-    </footer>
+    </main>
   </body>
 </html>
