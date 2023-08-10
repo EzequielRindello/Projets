@@ -669,8 +669,8 @@ ul {
     width: 90%;
     max-width: 90%;
   }
-  .general{
-    margin-top: 40%;
+  .main_h1{
+    display: none;
   }
 }
 @media (max-width: 1600px) {
