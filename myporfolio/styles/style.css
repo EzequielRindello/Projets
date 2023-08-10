@@ -511,7 +511,6 @@ strong {
   z-index: 9999;
   border-radius: 5px;
 }
-
 .notification.success {
   display: block;
 }
@@ -664,6 +663,14 @@ ul {
   }
   .show-sidebar .header {
     right: 0;
+  }
+  .notification {
+    left: 50%;
+    width: 90%;
+    max-width: 90%;
+  }
+  .general{
+    margin-top: 20%;
   }
 }
 @media (max-width: 1600px) {
