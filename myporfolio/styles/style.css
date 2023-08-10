@@ -672,8 +672,8 @@ ul {
   .main_h1{
     display: none;
   }
-  .purpuse-a{
-    padding: 50px;
+  .projects-button{
+    margin: 40px;
   }
 }
 @media (max-width: 1600px) {
