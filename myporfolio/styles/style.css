@@ -672,6 +672,9 @@ ul {
   .main_h1{
     display: none;
   }
+  .purpuse-a{
+    padding: 50px;
+  }
 }
 @media (max-width: 1600px) {
   /* igual o inferior al valor especificado */
