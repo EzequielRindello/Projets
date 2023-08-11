@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tatetí Game</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <script src="scripts/main.js"></script>
+  </head>
+  <body>
+    <div class="area">
+      <ul class="circles">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+      <section class="nashe">
+        <h1>Tic-tac-toe or Tateti in Argentina</h1>
+        <div id="container">
+          <div class="block">
+            <div id="box1" class="box top left">
+              <span data-player="none" onclick="play(this)">&nbsp;</span>
+            </div>
+            <div id="box2" class="box top">
+              <span data-player="none" onclick="play(this)">&nbsp;</span>
+            </div>
+            <div id="box3" class="box top right">
+              <span data-player="none" onclick="play(this)">&nbsp;</span>
+            </div>
+          </div>
+          <div class="block">
+            <div id="box4" class="box left">
+              <span data-player="none" onclick="play(this)">&nbsp;</span>
+            </div>
+            <div id="box5" class="box">
+              <span data-player="none" onclick="play(this)">&nbsp;</span>
+            </div>
+            <div id="box6" class="box right">
+              <span data-player="none" onclick="play(this)">&nbsp;</span>
+            </div>
+          </div>
+          <div class="block">
+            <div id="box7" class="box bottom left">
+              <span data-player="none" onclick="play(this)">&nbsp;</span>
+            </div>
+            <div id="box8" class="box bottom">
+              <span data-player="none" onclick="play(this)">&nbsp;</span>
+            </div>
+            <div id="box9" class="box bottom right">
+              <span data-player="none" onclick="play(this)">&nbsp;</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <footer class="footer">
+      <script>
+        const currentYear = new Date().getFullYear();
+        document.write(
+          `<p class="generated-paragraph" >©Tatetí ${currentYear}  -  Ezequiel Rindello</p>`
+        );
+      </script>
+    </footer>
+  </body>
+</html>
