@@ -390,6 +390,12 @@ footer a:hover {
     overflow: visible;
     height: auto;
   }
+  .watch {
+    display: none;
+  }
+  .river-card-img{
+    width: 80%;
+  }
 }
 @media (max-width: 1600px) {
   .river-paragraph {
