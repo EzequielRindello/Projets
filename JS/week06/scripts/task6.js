@@ -3,7 +3,7 @@ function getTotal() {
     const amounts = [];
 
     for (let i = 1; i <= 5; i++) {
-        const input = document.querySelector("#addend${i}");
+        const input = document.querySelector(`#addend${i}`);
         const amount = parseInt(input.value) || 0;
         amounts.push(amount);
     }
