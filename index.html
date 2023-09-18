@@ -8,47 +8,87 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <h1>Welcome to my personal Projects</h1>
-    <ul>
-      <li>
-        <a href="about me page/index.html" target="_blank">About Me Page</a>
-      </li>
-      <li>
-        <a href="wwr/index.html" target="_blank">White Water Rafting Website</a>
-      </li>
-      <li>
-        <a href="tateti/index.html" target="_blank">Tatetí</a>
-      </li>
-      <li>
-        <a href="myporfolio/index.html" target="_blank">Portfolio Personal</a>
-      </li>
-      <li>
-        <a href="JS/week02/task2.html" target="_blank">JavaSript Exercises</a>
-      </li>
-      <li>
-        <a href="calculadora/index.html" target="_blank">Calculadora simple</a>
-      </li>
-      <li>
-        <a href="https://github.com/EzequielRindello/cse210-projects" target="_blank"
-          >C#</a
-        >
-      </li>
-      <li>
-        <a href="https://github.com/EzequielRindello/Python" target="_blank"
-          >Pyhton</a
-        >
-      </li>
-      <li>
-        <a href="https://github.com/EzequielRindello" target="_blank"
-          >Git Hub</a
-        >
-      </li>
-    </ul>
+    <header>
+      <div class="name"><h1>Welcome to my projet site!</h1></div>
+    </header>
+    <nav>
+      <a class="nav-a" href="#" target="_blank">Home</a>
+      <a
+        class="nav-a"
+        href="https://github.com/EzequielRindello"
+        target="_blank"
+        >GitHub</a
+      >
+      <a
+        class="nav-a"
+        href="https://www.linkedin.com/in/ezequiel-rindello/"
+        target="_blank"
+        >Linkedin</a
+      >
+      <a
+        class="nav-a"
+        href="myporfolio/aboutme.html#seccion-destino"
+        target="_blank"
+        >Contact</a
+      >
+    </nav>
+    <main>
+      <br />
+      <h2>Feel free to check :)</h2>
+      <br />
+      <div class="center-hr">
+        <hr class="custom-hr">
+      </div>
+      <br />
+      <br />
+      <br />
+      <section>
+        <ul>
+          <li>
+            <a href="about me page/index.html" target="_blank">About Me Page</a>
+          </li>
+          <li>
+            <a href="wwr/index.html" target="_blank"
+              >White Water Rafting Website</a
+            >
+          </li>
+          <li>
+            <a href="tateti/index.html" target="_blank">Tatetí</a>
+          </li>
+          <li>
+            <a href="myporfolio/index.html" target="_blank"
+              >Portfolio Personal</a
+            >
+          </li>
+          <li>
+            <a href="JS/week02/task2.html" target="_blank"
+              >JavaSript Exercises</a
+            >
+          </li>
+          <li>
+            <a href="calculadora/index.html" target="_blank"
+              >Calculadora simple</a
+            >
+          </li>
+          <li>
+            <a
+              href="https://github.com/EzequielRindello/cse210-projects"
+              target="_blank"
+              >C#</a
+            >
+          </li>
+          <li>
+            <a href="https://github.com/EzequielRindello/Python" target="_blank"
+              >Pyhton</a
+            >
+          </li>
+        </ul>
+      </section>
+    </main>
     <footer>
-      <script>
-        const currentYear = new Date().getFullYear();
-        document.write(`<p>©${currentYear} - Ezequiel Rindello</p>`);
-      </script>
+      &copy;Ezequiel Rindello - <span id="date-placeholder"></span>| Last
+      Modified: <span id="lastModified-placeholder"></span>
     </footer>
+    <script src="main.js"></script>
   </body>
 </html>
