@@ -63,6 +63,14 @@ section {
   align-items: center;
   text-align: justify;
   font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin: 1rem auto;
+  border: 1px solid #bbb;
+  padding: 1rem;
+  background-color: #e6f2ff;
+  width: 40%;
+  height: auto;
+  border-radius: 5px;
+  box-shadow: 5px 5px 10px gray; 
 }
 /* ---------------------------------------footer--------------------------------------------------------- */
 footer {
