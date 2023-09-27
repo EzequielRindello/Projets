@@ -72,6 +72,11 @@ section {
   border-radius: 5px;
   box-shadow: 5px 5px 10px gray;
 }
+.h3-git{
+  padding-right: 70%;
+  padding-bottom: 4%;
+  text-decoration: underline;
+}
 .gallery {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
