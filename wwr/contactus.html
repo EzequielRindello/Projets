@@ -6,78 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact Us</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <style>
-      form {
-        /* Center the form on the page */
-        background-color: #d9c2a3;
-        margin: 150px auto;
-        width: 400px;
-        /* Form outline */
-        padding: 1em;
-        border: 1px solid black;
-        box-shadow: 5px 5px 10px #595c54;
-        border-radius: 1em;
-      }
-      ul {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-      }
-      form li + li {
-        margin-top: 1em;
-      }
-      label {
-        /* Uniform size & alignment */
-        display: inline-block;
-        width: 90px;
-        text-align: right;
-      }
-      input,
-      textarea {
-        /* To make sure that all text fields have the same font settings
-        By default, textareas have a monospace font */
-        font: 1em sans-serif;
-        /* Uniform text field size */
-        width: 300px;
-        box-sizing: border-box;
-        /* Match form field borders */
-        border: 1px solid #999;
-      }
-      input:focus,
-      textarea:focus {
-        /* Additional highlight for focused elements */
-        border-color: #000;
-      }
-      textarea {
-        /* Align multiline text fields with their labels */
-        vertical-align: top;
-        /* Provide space to type some text */
-        height: 5em;
-      }
-      .button {
-        /* Align buttons with the text fields */
-        padding-left: 90px; /* same size as the label elements */
-      }
-      button {
-        /* This extra margin represent roughly the same space as the space
-        between the labels and their text fields */
-        margin-left: 0.5em;
-      }
-      #feedback {
-        background-color: antiquewhite;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        padding: 0.5em;
-        /* make this element invisible until we are ready for it */
-        display: none;
-      }
-      .moveDown {
-        margin-top: 3em;
-      }
-    </style>
-    <link rel="icon" href="../favicon.ico" type="image/er-icon">
+    <link rel="icon" href="../favicon.ico" type="image/er-icon" />
   </head>
   <body>
     <header>
@@ -92,38 +21,57 @@
       </nav>
     </header>
     <main>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
       <div id="feedback"></div>
-      <form action="this_is_an_example.php" method="get">
-        <ul>
-          <li>
-            <label for="name">Name:</label>
-            <input
-              type="text"
-              id="name"
-              name="user_name"
-              placeholder="Steve"
-              required
-            />
-          </li>
-          <li>
-            <label for="mail">Email:</label>
-            <input
-              type="email"
-              id="mail"
-              name="user_email"
-              placeholder="example@gmail.com"
-              required
-            />
-          </li>
-          <li>
-            <label for="msg">Message:</label>
-            <textarea id="msg" name="user_message" required></textarea>
-          </li>
-          <li class="button">
-            <button type="submit">Send your message</button>
-          </li>
-        </ul>
-      </form>
+      <div class="form-container">
+        <div class="box">
+          <h2>Contact Us!</h2>
+          <p>Fill out the form to get in touch with us.</p>
+          <p>raftingchasers@gmail.com</p>
+        </div>
+        <div class="box">
+          <form action="this_is_an_example.php" method="get">
+            <ul>
+              <li>
+                <label for="name">Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="user_name"
+                  placeholder="Steve"
+                  required
+                />
+              </li>
+              <li>
+                <label for="mail">Email:</label>
+                <input
+                  type="email"
+                  id="mail"
+                  name="user_email"
+                  placeholder="example@gmail.com"
+                  required
+                />
+              </li>
+              <li>
+                <label for="msg">Message:</label>
+                <textarea id="msg" name="user_message" required></textarea>
+              </li>
+              <li class="button">
+                <button type="submit">Send your message</button>
+              </li>
+            </ul>
+          </form>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
       <br />
     </main>
     <footer>
