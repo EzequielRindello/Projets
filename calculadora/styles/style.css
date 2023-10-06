@@ -2,20 +2,18 @@
   box-sizing: border-box;
 }
 body {
-  background-image: linear-gradient(
-    to right,
-    #03045e,
-    #0077b6,
-    #00b4d8,
-    #00b4d8,
-    #0077b6,
-    #03045e
-  );
+  background: #67b26f;
+  background: -webkit-linear-gradient(to right, #4ca2cd, #67b26f);
+  background: linear-gradient(to right, #4ca2cd, #67b26f);
   margin: 0;
   min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+}
+h1 {
+  font-size: clamp(1rem, 6rem, 3rem);
 }
 #calculator {
   border: solid black 4px;
