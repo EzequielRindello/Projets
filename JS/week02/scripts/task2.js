@@ -15,7 +15,7 @@ const currentYear = 2023;
 
 document.querySelector("#year").textContent = currentYear;
 // Step 5: declare and instantiate a variable to hold the name of your picture
-const myPicture="images/picture.jpg";
+const myPicture="images/unnamed.webp";
 
 // Step 6: copy your image into the "images" folder
 
