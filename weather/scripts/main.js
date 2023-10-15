@@ -36,6 +36,6 @@ async function checkWeather(city) {
     }
 }
 
-searchBox.addEventListener("click", () => {
+searchBox.addEventListener("input", () => {
     checkWeather(searchBox.value);
 })
