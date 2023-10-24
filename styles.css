@@ -112,7 +112,7 @@ footer {
 /* ---------------------------------------hero--------------------------------------------------------- */
 .banner{
   grid-column:1/3 ;
-  background: url("../../images/homepage-hero.webp");
+  background: url("images/homepage-hero.webp");
   position: relative;
   width: 100%;
   height: 50vh;
