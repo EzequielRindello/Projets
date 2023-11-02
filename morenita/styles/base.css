@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat";
+}
+/* -----------------------header----------------------- */
+header {
+  position: relative;
+  z-index: 10;
+  height: 90px;
+  width: 100%;
+  position: relative;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+}
+.socials i {
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  position: relative;
+  line-height: 1.2;
+  font-size: 1.3em !important;
+  color: #fff;
+  padding: 10px;
+  transition: 0.5s ease;
+}
+.socials i:hover,
+.menu i:hover {
+  color: #999;
+}
+.menu i {
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  position: relative;
+  line-height: 1.2;
+  font-size: 1.7em !important;
+  color: #fff;
+  padding: 10px;
+  transition: 0.5s ease;
+}
+.logo img {
+  width: 170px;
+  height: auto;
+}
+/* -----------------------hero banner----------------------- */
+.hero-banner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  right: 0;
+  bottom: 0;
+  padding: 0 !important;
+  margin: 0 !important;
+  cursor: grab;
+}
+.hero-banner img {
+  width: 100%;
+  height: auto;
+  max-height: 100%;
+}
+.hero-banner h1 {
+  position: absolute;
+  margin-top: 20%;
+  margin-left: 5%;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  font-size: 2.23rem;
+  line-height: 1;
+  letter-spacing: 0.05em;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+/* -----------------------footer----------------------- */
+footer {
+  width: 100%;
+  height: 50px;
+  padding: 15px 0;
+  font-weight: 300 !important;
+  color: #b89e5d !important;
+  font-size: 0.65em;
+  background-color: #432724;
+}
+.footer-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0;
+}
