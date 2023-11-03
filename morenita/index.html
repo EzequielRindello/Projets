@@ -17,35 +17,45 @@
   <body>
     <header>
       <div class="menu">
-        <i class="bi bi-list"></i>
+        <button id="abrir-menu" aria-label="open menu">
+          <i class="bi bi-list"></i>
+        </button>
       </div>
       <div class="logo">
         <img src="images/logo-blanco.svg" alt="logo blanco" />
       </div>
       <div class="socials">
-        <i class="bi bi-facebook"></i>
-        <i class="bi bi-instagram"></i>
-        <i class="bi bi-youtube"></i>
+        <i class="bi bi-facebook">
+          <span class="tooltip">Siguenos en Facebook</span>
+        </i>
+        <i class="bi bi-instagram">
+          <span class="tooltip">Siguenos en Instagram</span>
+        </i>
+        <i class="bi bi-youtube">
+          <span class="tooltip">Siguenos en YouTube</span>
+        </i>
       </div>
     </header>
     <main>
       <div class="hero-banner">
         <h1>Haciendo café desde 1890</h1>
-        <img src="images/hero5.webp" alt="hero banner" />
+        <!-- <img src="images/hero5.webp" alt="hero banner" /> -->
       </div>
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <div class="footer-img">
-        <img src="images/footer-img.webp" alt="granos de cafe" />
+        <img src="images/footer-img.webp" alt="granos de cafe" loading="lazy" />
       </div>
     </main>
     <footer>
-      <div><p>Copyright 2023 © Morenita</p></div>
-      <div>
+      <div class="box1">
+        <p>Copyright 2023 © <strong>Morenita</strong></p>
+      </div>
+      <div class="box2">
         <p>
-          Política de privacidad - Defensa de las y los Consumidores. Para
-          reclamos ingrese aquí
+          <a href="">Política de privacidad</a> - Defensa de las y los
+          Consumidores. Para reclamos ingrese aquí
         </p>
       </div>
     </footer>
