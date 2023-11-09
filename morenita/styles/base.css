@@ -45,6 +45,10 @@ header {
   width: 170px;
   height: auto;
 }
+#header-second-icon {
+  display: none;
+  max-height: 80px !important;
+}
 .socials {
   display: flex;
   align-items: center;
@@ -147,6 +151,55 @@ header {
   justify-content: flex-end;
   align-self: flex-end;
   padding: 3%;
+}
+/* -----------------------primer div----------------------- */
+.primer-div {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-top: -6px;
+}
+.primer-div h2 {
+  color: #432724;
+  font-weight: 300;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size:3em;
+}
+#h2-video {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin: 40px;
+  margin-top: 70%;
+}
+#h2-video img {
+  height: 80px;
+  margin: 2%;
+}
+.box-container {
+  display: flex;
+  flex-flow: row wrap;
+  height: fit-content;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 300px;
+}
+.box img {
+  height: 120px;
+  width: 100%;
+  margin: 30px;
+  opacity: 0.3;
+}
+.box img:hover {
+  opacity: 1;
+  transition: 0.5s ease;
 }
 /* -----------------------footer----------------------- */
 footer {
