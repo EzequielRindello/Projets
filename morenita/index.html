@@ -3,6 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="frame-src 'self' https://www.youtube.com;"
+    />
     <title>Morenita</title>
     <link
       href="https://fonts.googleapis.com/css?family=Montserrat"
@@ -67,28 +71,65 @@
           </div>
         </div>
         <div class="box-container">
-          <div style="background-color: #e9e6e1" class="box">
+          <div
+            style="background-color: #e9e6e1"
+            class="box"
+            onclick="openModal('https://www.youtube.com/embed/2LUhN3pHDvM')"
+          >
             <img src="images/icon-prensa_francesa.svg" alt="prensa_francesa" />
             <h3>PRENSA FRANCESA</h3>
           </div>
-          <div style="background-color: #75543d" class="box">
+          <div
+            style="background-color: #75543d"
+            class="box"
+            onclick="openModal('https://www.youtube.com/embed/dCMy2ThH5-c')"
+          >
             <img src="images/icon-cono_goteo.svg" alt="icon-cono_goteo" />
             <h3>CONO DE GOTEO</h3>
           </div>
-          <div style="background-color: #b89e5d" class="box">
+          <div
+            style="background-color: #b89e5d"
+            class="box"
+            onclick="openModal('https://www.youtube.com/embed/QnRvmbYyLqo')"
+          >
             <img src="images/icon-italiana.svg" alt="icon-italiana" />
             <h3>ITALIANA</h3>
           </div>
-          <div style="background-color: #b1c8ca" class="box">
+          <div
+            style="background-color: #b1c8ca"
+            class="box"
+            onclick="openModal('https://www.youtube.com/embed/2p1mcG-BEwc')"
+          >
             <img src="images/icon-chemex.svg" alt="icon chemex" />
             <h3>CHEMEX</h3>
           </div>
-          <div style="background-color: #a48876" class="box">
+          <div
+            style="background-color: #a48876"
+            class="box"
+            onclick="openModal('https://www.youtube.com/embed/dCMy2ThH5-c')"
+          >
             <img src="images/icon-sifon.svg" alt="icon sifon" />
             <h3>SIFON</h3>
           </div>
-          <div style="background-color: #432724" class="box">
+          <div
+            style="background-color: #432724"
+            class="box"
+            onclick="openModal('https://www.youtube.com/embed/YV9ttXgiaTg')"
+          >
             <img src="images/iso-light.svg" alt="primer div logo" />
+          </div>
+          <div id="videoModal" class="modal">
+            <div class="modal-content">
+              <span class="close" onclick="closeModal()">&times;</span>
+              <iframe
+                id="youtubeVideo"
+                width="560"
+                height="315"
+                src=""
+                frameborder="0"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -104,8 +145,7 @@
             disfrutas.
           </p>
         </div>
-        <div id="segundo-banner">
-        </div>
+        <div id="segundo-banner"></div>
       </div>
       <div class="footer-img">
         <img src="images/footer-img.webp" alt="granos de cafe" loading="lazy" />
