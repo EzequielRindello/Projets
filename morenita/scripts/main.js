@@ -1,5 +1,6 @@
 // alert("Hola! Para mas informacion consulta el pie de pagina")
 
+//videos de youtube
 function openModal(videoUrl) {
     const videoModal = document.getElementById('videoModal');
     const youtubeVideo = document.getElementById('youtubeVideo');
@@ -16,6 +17,7 @@ function closeModal() {
     youtubeVideo.src = youtubeVideo.src;
 }
 
+// scroll del header
 document.addEventListener("scroll", function () {
     let header = document.getElementById("header");
     let headerFirstIcon = document.getElementById("header-first-icon");
@@ -41,20 +43,3 @@ document.addEventListener("scroll", function () {
     }
 });
 
-const openFullscreenModalBtn = document.getElementById('openFullscreenModalBtn');
-const fullscreenModal = document.getElementById('fullscreenModal');
-
-openFullscreenModalBtn.addEventListener('click', function () {
-    fullscreenModal.style.display = 'flex';
-});
-
-function closeFullscreenModal() {
-    fullscreenModal.style.display = 'none';
-}
-
-// Cerrar el modal al hacer clic fuera del contenido
-window.addEventListener('click', function (event) {
-    if (event.target === fullscreenModal) {
-        closeFullscreenModal();
-    }
-});
