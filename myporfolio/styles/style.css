@@ -280,6 +280,7 @@ li a span {
   display: inline-block;
   font-weight: 700;
   border-radius: 5px;
+  transition: 0.2s ease;
   box-shadow: 0 5px 15px 0 rgba(var(--buttons-color));
 }
 .projects-button:hover {
@@ -472,14 +473,7 @@ strong {
 .box2 {
   grid-column: 4;
 }
-.sk1,
-.sk2,
-.sk3,
-.sk4,
-.sk5,
-.sk6,
-.sk7,
-.sk8 {
+.sk1 {
   background-color: var(--buttons-color);
   color: var(--buttons-text-color);
   border-radius: 5px;
@@ -491,6 +485,11 @@ strong {
   justify-content: center;
   margin-bottom: 1.5rem;
   margin-right: 1.5rem;
+  transition: .3s ease;
+}
+.sk1:hover{
+  transform: translateY(-3px);
+  color: var(--buttons-hover);
 }
 .skills {
   display: flex;
@@ -669,10 +668,10 @@ ul {
     width: 90%;
     max-width: 90%;
   }
-  .main_h1{
+  .main_h1 {
     display: none;
   }
-  .projects-button{
+  .projects-button {
     margin: 40px;
   }
 }
