@@ -49,19 +49,27 @@ a:hover {
   right: 0;
   padding: 10px;
   margin-right: 5%;
-  margin-top: 0.5%;
+  margin-top: .8%;
 }
 .box1 > div {
   margin-right: 30px;
 }
-.btd,.bty {
-  background-color: #2196f3;
-  color: white;
-  padding: 10px;
-  font-size: 16px;
+.box1 i{
+  font-size: 24px;
+}
+.btd,
+.bty {
   border: none;
-  outline: none;
-  border-radius: 10px;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+  outline: inherit;
   cursor: pointer;
 }
 .dropdown {
@@ -87,10 +95,6 @@ a:hover {
 }
 .dropdown:hover .dropdown-content {
   display: block;
-}
-.bty:hover,
-.dropdown:hover .btn {
-  background-color: #0b7dda;
 }
 /* ---------------------------------------main--------------------------------------------------------- */
 main {
@@ -310,7 +314,7 @@ footer {
   }
   .box1 {
     margin-right: 12%;
-    margin-top: 1.5%;
+    margin-top: 1.7%;
   }
 }
 @media (max-width: 640px) {
@@ -325,6 +329,9 @@ footer {
     grid-template-columns: 1fr;
   }
   .box1 {
+    display: none;
+  }
+  #mobile-nav{
     display: none;
   }
 }
