@@ -324,6 +324,23 @@ header {
   background-position: center;
   position: relative;
 }
+/* -----------------------segunda pagina----------------------- */
+#segunda-pagina {
+  max-width: 800px;
+  margin: 0 auto; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+  text-align: center;
+}
+#segunda-pagina h1 {
+  margin: 40px;
+}
+#segunda-pagina h2 {
+  margin: 20px;
+}
+
 /* -----------------------footer----------------------- */
 footer {
   width: 100%;
@@ -445,7 +462,7 @@ footer a:hover {
     grid-template-columns: 1fr;
   }
   .segundo-div,
-  .tercer-div h2{
+  .tercer-div h2 {
     margin: 20px;
   }
 }
