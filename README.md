@@ -8,4 +8,4 @@ This repository contains my project code. They are arranged as follows:
 * `Morenita` - Web Scrapping.
 * `Weather app` - An app created to demonstrate knowledge of JSON files, dom manipulation and API´s.
 * `Tatetí` - Web app demonstrating HTML CSS and JavaScrip knowledge.
-* * `CalCulator` - Web app demonstrating HTML CSS and JavaScrip knowledge.
+* `CalCulator` - Web app demonstrating HTML CSS and JavaScrip knowledge.
