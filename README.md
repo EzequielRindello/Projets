@@ -1,6 +1,11 @@
-# student-template
-Personal Projects
-(This is the starter code for students in WDD-130)
+# Personal projects
 
-This class serves as an introduction to Web design and development. The course is designed to introduce students to the basics of Web technology,
-Web design and development principles.
+This repository contains my project code. They are arranged as follows:
+
+* `Web Portfolio` - A desktop website demonstrating HTML CSS and JavaScrip knowledge.
+* `WWR` -  A responsive website demonstrating my HTML CSS and JavaScrip knowledge and using @media queries.
+* `Chamber` - A responsive website demonstrating my HTML CSS and JavaScrip knowledge and using @media queries, JSON and Open API´s.
+* `Morenita` - Web Scrapping.
+* `Weather app` - An app created to demonstrate knowledge of JSON files, dom manipulation and API´s.
+* `Tatetí` - Web app demonstrating HTML CSS and JavaScrip knowledge.
+* `CalCulator` - Web app demonstrating HTML CSS and JavaScrip knowledge.
