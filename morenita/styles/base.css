@@ -156,6 +156,7 @@ header {
 .primer-div {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  width: 100%;
 }
 .primer-div h2 {
   color: #432724;
@@ -324,14 +325,85 @@ header {
   background-position: center;
   position: relative;
 }
-/* -----------------------segunda pagina----------------------- */
-#segunda-pagina {
-  max-width: 800px;
-  margin: 0 auto; 
+/* -----------------------quinto-div----------------------- */
+.quinto-div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+.quinto-div img {
+  width: 100%;
+  height: auto;
+}
+.quinto-div h2 {
+  position: absolute;
+  color: #432724;
+  font-weight: 300;
+  line-height: 1.5;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 3em;
+}
+.div-span {
+  text-shadow: 2px 0 0 #432724, -2px 0 0 #432724, 0 2px 0 #432724,
+    0 -2px 0 #432724, 1px 1px #432724, -1px -1px 0 #432724, 1px -1px 0 #432724,
+    -1px 1px 0 #432724;
+  color: #f9f6f1;
+  letter-spacing: 0.1em;
+}
+.carrusel a{
+  font-size: 1.25rem;
+  color: #432724;
+}
+/* -----------------------carrusel----------------------- */
+.carrusel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: scroll;
+}
+.elementos {
+  flex: 1 0 auto;
+  margin: 0 50px;
+  background-color: transparent;
+  width: 500px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center; 
+  align-items: center;
+}
+.elementos h4 {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #432724;
+  z-index: 999999;
+}
+.elementos img {
+  cursor: pointer;
+}
+.elementos img:hover {
+  transform: scale(1.1);
+  transition: 0.4s ease-in-out;
+}
+
+.carrusel::-webkit-scrollbar {
+  width: 10px;
+  height: 13px;
+}
+.carrusel::-webkit-scrollbar-thumb {
+  background-color: #432724;
+  border-radius: 16px;
+}
+/* -----------------------segunda pagina----------------------- */
+#segunda-pagina {
+  max-width: 800px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 #segunda-pagina h1 {
