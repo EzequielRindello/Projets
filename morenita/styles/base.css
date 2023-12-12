@@ -353,7 +353,7 @@ header {
   color: #f9f6f1;
   letter-spacing: 0.1em;
 }
-.carrusel a{
+.carrusel a {
   font-size: 1.25rem;
   color: #432724;
 }
@@ -382,10 +382,10 @@ header {
 }
 .elementos img {
   cursor: pointer;
+  transition: transform 0.4s ease-in-out;
 }
 .elementos img:hover {
   transform: scale(1.1);
-  transition: 0.4s ease-in-out;
 }
 .carrusel::-webkit-scrollbar {
   width: 10px;
