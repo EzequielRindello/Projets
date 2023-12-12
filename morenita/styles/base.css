@@ -539,5 +539,6 @@ footer a:hover {
   }
   .quinto-div h2 {
     margin-top: 20%;
+    z-index: 9999;
   }
 }
