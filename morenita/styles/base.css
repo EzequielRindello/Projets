@@ -30,6 +30,9 @@
 #socials-menu i{
   color: #b89e5d;
 }
+.menu-nav a:hover,#socials-menu i:hover{
+  color: #d3a634;
+}
 /* -----------------------header----------------------- */
 header {
   position: absolute;

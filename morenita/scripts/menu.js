@@ -41,6 +41,7 @@ openMenu.addEventListener("click", (event) => {
         contenidoDinamico.style.height = "100%";
         contenidoDinamico.style.backgroundColor = "rgba(67, 39, 36, 1)";
         contenidoDinamico.style.zIndex = "99999999999999";
+        contenidoDinamico.style.opacity = 0.9;
     }
     // Cambiar el estado del menú
     menuAbierto = !menuAbierto;
