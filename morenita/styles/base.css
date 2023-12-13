@@ -380,11 +380,13 @@ header {
   color: #432724;
   z-index: 999999;
 }
-.elementos img {
+.elementos img,
+.contenedor img {
   cursor: pointer;
   transition: transform 0.4s ease-in-out;
 }
-.elementos img:hover {
+.elementos img:hover,
+.contenedor img:hover {
   transform: scale(1.1);
 }
 .carrusel::-webkit-scrollbar {
@@ -411,7 +413,80 @@ header {
 #segunda-pagina h2 {
   margin: 20px;
 }
-
+/* -----------------------tercera pagina----------------------- */
+.productos-banner {
+  width: 100%;
+  height: 300px;
+  background: url("../images/slider-02.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  text-align: center;
+  overflow: hidden; 
+}
+.productos-banner::before {
+  content: ""; 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(
+    0,
+    0,
+    0,
+    0.5
+  ); 
+}
+.productos-banner p {
+  font-size: 2em;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  mix-blend-mode: lighten; 
+  padding: 20px; 
+  margin-top: 5%;
+}
+.filter {
+  box-shadow: 0 2px 5px rgb(0 0 0 / 10%);
+  height: 75px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+}
+.filter i{
+  font-size: 24px;
+  margin-left: 15%;
+}
+.contenedor h2 {
+  margin: 40px;
+  z-index: 999999;
+}
+.galeria-contenedor h4{
+  position: relative;
+  z-index: 999999;
+}
+.contenedor h2:hover,
+.galeria-contenedor h4:hover {
+  color: #b89e5d;
+}
+.galeria-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  text-align: center;
+}
+.galeria-contenedor div {
+  margin: 10px;
+}
+.productos-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-left: 15%;
+  margin-bottom: 3%;
+}
 /* -----------------------footer----------------------- */
 footer {
   width: 100%;
@@ -542,5 +617,11 @@ footer a:hover {
   }
   .elementos img:hover {
     transform: none;
+  }
+  .productos-grid {
+    margin-left: 1%;
+  }
+  .galeria-contenedor img{
+    width: 250px;
   }
 }
