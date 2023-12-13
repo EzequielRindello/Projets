@@ -122,10 +122,20 @@ header {
   padding: 0 !important;
   margin: 0 !important;
   cursor: grab;
+  background-color: rgba(0, 0, 0, 0.5);
   background-size: cover;
   background-position: center;
   transition: all 0.1s ease-in-out;
   animation: banner 36s infinite linear;
+}
+.hero-banner::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .hero-banner img {
   width: 100%;
