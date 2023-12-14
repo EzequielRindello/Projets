@@ -1,4 +1,4 @@
-// alert("Hola! Para mas informacion consulta el pie de pagina")
+alert("Hola! Para mas informacion consulta \"politica de privacidad\" al pie de pagina")
 
 //videos de youtube
 function openModal(videoUrl) {
