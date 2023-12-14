@@ -8,10 +8,11 @@
   --text-color: #212225;
   --titles-color: #0d0f10;
   --primary-color: #eff0f0;
-  --secondary-color-background: #e6f2ff;
+  --secondary-color-background: #444;
   --hover-color: #bd0057;
   --header-color: #ffffff;
-  --menu-color:#0d0f10;
+  --menu-color: #0d0f10;
+  --card-background: #444;
   --font-family: "Mooli", "Reboto", sans-serif;
 }
 body.color-change {
@@ -22,7 +23,8 @@ body.color-change {
   --hover-color: #f6ae2d;
   --secondary-color-background: #1b1b1b;
   --header-color: #030303;
-  --menu-color:#f6ae2d;
+  --menu-color: #f6ae2d;
+  --card-background: #1b1b1b;
   --font-family: "Mooli", "Reboto", sans-serif;
 }
 /* ---------------------------------------body--------------------------------------------------------- */
@@ -126,7 +128,10 @@ main {
 li {
   padding: 5px;
   list-style: armenian;
-  color: var(--text-color);
+  color: #fff;
+}
+li a{
+  color: #fff;
 }
 h2 {
   padding-top: 30px;
@@ -134,25 +139,23 @@ h2 {
   text-transform: uppercase;
   color: var(--titles-color);
 }
-section {
+.github-info section {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: justify;
   margin: 1rem auto;
-  border: 1px solid #bbb;
   padding: 1rem;
   background-color: var(--secondary-color-background);
   width: 70%;
   height: auto;
-  border-radius: 5px;
-  box-shadow: 5px 5px 10px gray;
+  border-radius: 24px;
 }
 .h3-git {
   padding-right: 70%;
   padding-bottom: 4%;
   text-decoration: underline;
-  color: var(--titles-color);
+  color: #fff;
 }
 .gallery {
   display: grid;
@@ -258,7 +261,7 @@ footer {
   flex: 1;
   max-width: 400px;
   height: 140px;
-  background-color: #444;
+  background-color: var(--card-background);
   margin: 20px;
   cursor: pointer;
   display: flex;
