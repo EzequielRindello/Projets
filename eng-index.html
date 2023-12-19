@@ -99,45 +99,56 @@
       <br />
       <br />
       <div class="gallery">
-        <div class="image-container">
-          <a href="myporfolio/index.html" target="_blank">
-            <img src="images/portfolio.jpg" alt="Image 1" />
-          </a>
+        <div
+          class="image-container"
+          onclick="showPopup('Portafolio Web', 'Descripción de la imagen 1', 'myporfolio/index.html')"
+        >
+          <img src="images/portfolio.jpg" alt="Imagen 1" />
           <div class="image-title">Web Portfolio</div>
         </div>
-        <div class="image-container">
-          <a href="wwr/index.html" target="_blank">
-            <img src="images/wrr.jpg" alt="Image 2" />
-          </a>
+
+        <div
+          class="image-container"
+          onclick="showPopup('WWR', 'Descripción de la imagen 2', 'wwr/index.html')"
+        >
+          <img src="images/wrr.jpg" alt="Imagen 2" />
           <div class="image-title">WWR</div>
         </div>
-        <div class="image-container">
-          <a
-            href="https://ezequielrindello.github.io/wdd230/chamber"
-            target="_blank"
-          >
-            <img src="images/chamber.jpg" alt="Image 3" />
-          </a>
+
+        <div
+          class="image-container"
+          onclick="showPopup('Chamber', 'Descripción de la imagen 3', 'https://ezequielrindello.github.io/wdd230/chamber')"
+        >
+          <img src="images/chamber.jpg" alt="Imagen 3" />
           <div class="image-title">Chamber</div>
         </div>
-        <div class="image-container">
-          <a href="https://ezequielrindello.github.io/wdd230" target="_blank">
-            <img src="images/wdd-230.jpg" alt="Image 4" />
-          </a>
+
+        <div
+          class="image-container"
+          onclick="showPopup('Desarrollo Web', 'Descripción de la imagen 4', 'https://ezequielrindello.github.io/wdd230')"
+        >
+          <img src="images/wdd-230.jpg" alt="Imagen 4" />
           <div class="image-title">Web Development</div>
         </div>
-        <div class="image-container">
-          <a href="morenita/index.html" target="_blank">
-            <img src="images/morenita.jpg" alt="Image 5" />
-          </a>
+
+        <div
+          class="image-container"
+          onclick="showPopup('Morenita', 'Descripción de la imagen 5', 'morenita/index.html')"
+        >
+          <img src="images/morenita.jpg" alt="Imagen 5" />
           <div class="image-title">Morenita</div>
         </div>
-        <div class="image-container">
-          <a href="weather/index.html" target="_blank">
-            <img src="images/weather-app.jpg" alt="Image 6" />
-          </a>
-          <div class="image-title">Weather App</div>
+
+        <div
+          class="image-container"
+          onclick="showPopup('Scoots', 'Descripción de la imagen 6', 'https://ezequielrindello.github.io/wdd230/scoots/index.html')"
+        >
+          <img src="images/scoots.jpg" alt="Imagen 6" />
+          <div class="image-title">Scoots</div>
         </div>
+      </div>
+      <div class="overlay" id="popupOverlay">
+        <div class="popup" id="popupContent"></div>
       </div>
       <br />
       <br />
@@ -154,28 +165,35 @@
       <br />
       <br />
       <div class="gallery">
-        <div class="image-container">
-          <a href="weather/index.html" target="_blank">
-            <img src="images/weather-app.jpg" alt="Image 6" />
-          </a>
+        <div
+          class="image-container"
+          onclick="showPopup('App del Clima', 'Descripción de la App del Clima', 'weather/index.html')"
+        >
+          <img src="images/weather-app.jpg" alt="Imagen 7" />
           <div class="image-title">Weather App</div>
         </div>
-        <div class="image-container">
-          <a href="tateti/index.html" target="_blank">
-            <img src="images/tateti.jpg" alt="Image 7" />
-          </a>
+
+        <div
+          class="image-container"
+          onclick="showPopup('Tatetí', 'Descripción de Tatetí', 'tateti/index.html')"
+        >
+          <img src="images/tateti.jpg" alt="Imagen 8" />
           <div class="image-title">Tic-Tac-Toe</div>
         </div>
-        <div class="image-container">
-          <a href="JS/week02/task2.html" target="_blank">
-            <img src="images/js.jpg" alt="Image 8" />
-          </a>
+
+        <div
+          class="image-container"
+          onclick="showPopup('Ejercicios de JavaScript', 'Descripción de Ejercicios de JavaScript', 'JS/week02/task2.html')"
+        >
+          <img src="images/js.jpg" alt="Imagen 9" />
           <div class="image-title">JavaScript Exercises</div>
         </div>
-        <div class="image-container">
-          <a href="calculadora/index.html" target="_blank">
-            <img src="images/calculadora.jpg" alt="Image 9" />
-          </a>
+
+        <div
+          class="image-container"
+          onclick="showPopup('Calculadora simple', 'Descripción de la Calculadora simple', 'calculadora/index.html')"
+        >
+          <img src="images/calculadora.jpg" alt="Imagen 10" />
           <div class="image-title">Simple Calculator</div>
         </div>
       </div>

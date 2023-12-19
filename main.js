@@ -50,3 +50,28 @@ window.addEventListener("beforeunload", function () {
         document.body.classList.contains("color-change");
     localStorage.setItem("colorChanged", isColorChanged);
 });
+
+function showPopup(title, content, link) {
+    let popupOverlay = document.getElementById('popupOverlay');
+    let popupContent = document.getElementById('popupContent');
+
+    // Mostrar overlay y contenido
+    popupOverlay.style.display = 'flex';
+    popupContent.innerHTML = '<h3>' + title + '</h3>';
+    popupContent.innerHTML += '<br>'
+    popupContent.innerHTML += '<p>' + content + '</p>';
+    popupContent.innerHTML += '<br>'
+    popupContent.innerHTML += '<a href="' + link + '" target="_blank">Ir al enlace</a>';
+    popupContent.innerHTML += '<span class="close-btn" onclick="closePopup()"><i class="bi bi-x-circle-fill"></i></span>';
+}
+
+function closePopup() {
+    let popupOverlay = document.getElementById('popupOverlay');
+    popupOverlay.style.display = 'none';
+}
+
+popupOverlay.addEventListener('click', function (event) {
+    if (event.target === popupOverlay) {
+        closePopup();
+    }
+});
