@@ -158,6 +158,9 @@ footer .social img {
   margin-right: 20px;
   border-radius: 50%;
 }
+footer .social a:hover{
+  text-decoration: none;
+}
 footer h3 {
   color: #d9c2a3;
 }
