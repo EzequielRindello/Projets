@@ -405,7 +405,7 @@ footer {
     transform: none;
   }
   .banner{
-    height: 40vh;
+    height: fit-content;
   }
 }
 @media (max-width: 640px) {
@@ -425,5 +425,13 @@ footer {
   }
   .box1 i{
     font-size: 20px;
+  }
+}
+@media (max-width: 400px){
+  .box1{
+    display: none;
+  }
+  body{
+    min-width: 400px;
   }
 }
