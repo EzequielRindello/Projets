@@ -405,7 +405,7 @@ footer {
     transform: none;
   }
   .banner{
-    height: 50vh;
+    height: 40vh;
   }
 }
 @media (max-width: 640px) {
@@ -421,7 +421,7 @@ footer {
   }
   .box1 {
     margin-right: 11%;
-    margin-top: 4%;
+    margin-top: 5%;
   }
   .box1 i{
     font-size: 20px;
