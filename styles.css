@@ -221,7 +221,9 @@ footer {
   padding-top: 3%;
   color: #fff;
 }
-
+.box1-movile{
+  display: none;
+}
 /* ---------------------------------------class selectors--------------------------------------------------------- */
 .name {
   font-weight: bold;
@@ -374,9 +376,6 @@ footer {
   .homepage-hero p {
     font-size: 14px;
   }
-  .banner {
-    height: 30vh;
-  }
   .box1 {
     margin-right: 12%;
     margin-top: 1.7%;
@@ -405,6 +404,9 @@ footer {
   .gallery img:hover {
     transform: none;
   }
+  .banner{
+    height: 50vh;
+  }
 }
 @media (max-width: 640px) {
   .gallery {
@@ -418,6 +420,10 @@ footer {
     grid-template-columns: 1fr;
   }
   .box1 {
-    display: none;
+    margin-right: 11%;
+    margin-top: 4%;
+  }
+  .box1 i{
+    font-size: 20px;
   }
 }
