@@ -38,3 +38,32 @@ async function generateJoke() {
         console.error(error);
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const bubbleCount = 50;
+    const swayTypes = ["sway-left-to-right", "sway-right-to-left"];
+
+    function randomRange(min, max) {
+        return min + Math.floor(Math.random() * (max - min + 1));
+    }
+
+    function sample(list) {
+        return list[Math.floor(Math.random() * list.length)];
+    }
+
+    const bubblesContainer = document.querySelector(".bubbles");
+
+    for (let i = 0; i < bubbleCount; i++) {
+        const bubble = document.createElement("div");
+        bubble.classList.add("bubble");
+        bubble.style.left = randomRange(0, 100) + "vw"; // Cambiado a 'left' en lugar de '--bubble-left-offset'
+        bubble.style.setProperty("--bubble-radius", randomRange(1, 10) + "vw");
+        bubble.style.setProperty("--bubble-float-duration", randomRange(6, 12) + "s");
+        bubble.style.setProperty("--bubble-sway-duration", randomRange(4, 6) + "s");
+        bubble.style.setProperty("--bubble-float-delay", randomRange(0, 4) + "s");
+        bubble.style.setProperty("--bubble-sway-delay", randomRange(0, 4) + "s");
+        bubble.style.setProperty("--bubble-sway-type", sample(swayTypes));
+
+        bubblesContainer.appendChild(bubble);
+    }
+  });
