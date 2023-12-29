@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dad Jokes</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="styles/base.css" />
   </head>
   <body>
@@ -11,6 +12,7 @@
       <h3>Try not to laugh, seriously.</h3>
       <div id="joke" class="joke"></div>
       <button id="jokeBtn" class="btn">Get Another Dad Joke</button>
+      <button onclick="createTwitterPost()" id="twitter-post" class="btn" aria-label="tw-rbt"><i class="bi bi-twitter-x"></i></i></button>
     </div>
     <div class="bubbles"></div>
     <script src="scripts/main.js"></script>

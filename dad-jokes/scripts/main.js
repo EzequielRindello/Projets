@@ -2,6 +2,7 @@
 const jokeEl = document.getElementById("joke");
 const jokeBtn = document.getElementById("jokeBtn");
 const apiUrl = "https://icanhazdadjoke.com"
+const twitterPost = document.getElementById("twitter-post");
 
 // Agregar un evento de clic al botón para llamar a la función generateJoke
 jokeBtn.addEventListener("click", generateJoke);
@@ -66,4 +67,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
         bubblesContainer.appendChild(bubble);
     }
-  });
+});
+
+function createTwitterPost() {
+    window.open("https://twitter.com/intent/tweet?text=" + jokeEl.innerHTML,
+        "Tweet Window", "width=600", "height=300")
+}
