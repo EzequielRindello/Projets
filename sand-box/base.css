@@ -13,6 +13,7 @@ body {
 #yesButton {
     position: absolute;
     margin-right: 150px;
+    margin-top: 10px;
 }
 .header_text {
     font-family: 'Nunito';
@@ -30,6 +31,7 @@ body {
     align-items: center;
     margin-top: 20px;
     margin-left: 20px;
+    max-width: 100%;
 }
 .btn {
     background-color: #FFB6C1;
