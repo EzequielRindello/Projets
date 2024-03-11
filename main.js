@@ -70,7 +70,7 @@ function closePopup() {
     popupOverlay.style.display = 'none';
 }
 
-popupOverlay.addEventListener('click', function (event) {
+popupOverlay.addEventListener("click", function (event) {
     if (event.target === popupOverlay) {
         closePopup();
     }
