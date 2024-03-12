@@ -329,6 +329,10 @@ footer {
   border-radius: 5px;
   text-align: center;
   margin-top: -20%;
+  width: 50%;
+}
+.popup p{
+  line-height: 1.5;
 }
 .popup a {
   text-decoration: underline;
@@ -410,6 +414,9 @@ footer {
   }
   .banner {
     height: fit-content;
+  }
+  .popup {
+    width: 80%;
   }
 }
 @media (max-width: 640px) {
